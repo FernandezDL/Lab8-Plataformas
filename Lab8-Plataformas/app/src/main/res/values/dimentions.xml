@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolBarHeight">65</dimen>
+    <dimen name="restOfScreen">660</dimen>
+
+    <dimen name="group">70</dimen>
+    <dimen name="imageSize">45</dimen>
+
+    <dimen name="imageSize2">135</dimen>
+    <dimen name="round">75</dimen>
+
+    <dimen name="startMargin">75</dimen>
+    <dimen name="topMargin">60</dimen>
+    <dimen name="space">35</dimen>
+
+    <dimen name="subtitle">18</dimen>
+    <dimen name="content">16</dimen>
+</resources>
