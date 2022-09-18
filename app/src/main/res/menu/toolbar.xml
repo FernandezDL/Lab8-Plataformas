@@ -5,7 +5,7 @@
     <item
         android:id="@+id/menu_fromAToZ"
         android:title="@string/fromAToZ"
-        app:showAction= "never"/>
+        app:showAsAction= "never"/>
 
     <item
         android:id="@+id/menu_fromZToA"

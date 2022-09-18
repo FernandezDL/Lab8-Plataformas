@@ -33,13 +33,9 @@ class CharactersFragment : Fragment(R.layout.fragment_characters), persona.Recyc
     }
 
     override fun onPersonClicked(persona: Character) {
-<<<<<<< HEAD
         val action= CharactersFragmentDirections.actionCharactersFragmentToCharacterDetails2(
             persona
         )
-=======
-        val action= CharactersFragmentDirections.actionCharactersFragmentToCharacterDetails2(persona)
->>>>>>> fc08dcb1855904e97892d79aaf4a36b664372002
 
         requireView().findNavController().navigate(action)
     }

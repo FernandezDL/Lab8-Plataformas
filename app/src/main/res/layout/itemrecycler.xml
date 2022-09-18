@@ -20,7 +20,7 @@
 
         android:layout_marginStart="20dp"
 
-        android:srcCompat="@tools:sample/avatars"
+        tools:srcCompat="@tools:sample/avatars"
         android:contentDescription="@string/imageDescription" />
 
     <TextView
