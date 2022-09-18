@@ -10,7 +10,7 @@ import coil.load
 
 class CharacterDetails : Fragment(R.layout.fragment_character_details) {
 
-    val args: DetailsFragmentArgs by navArgs()
+    val args: CharacterDetailsArgs by navArgs()
     private lateinit var characterProfilePic:ImageView
     private lateinit var characterName: TextView
     private lateinit var characterSpecies: TextView

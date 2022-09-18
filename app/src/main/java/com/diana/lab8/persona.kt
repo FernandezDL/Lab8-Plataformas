@@ -9,17 +9,13 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 
-class persona(
-    private val list:MutableList<Character>,
-    private val listener: CharactersFragment
-    ) : RecyclerView.Adapter<persona.ViewHolder>() {
+class persona(private val list:MutableList<Character>, private val listener: CharactersFragment) : RecyclerView.Adapter<persona.ViewHolder>() {
 
     interface RecyclerPersonClickHandler{
         fun onPersonClicked(persona: Character)
     }
 
-    class ViewHolder(private val view: View,
-                     private val list3: RecyclerPersonClickHandler):RecyclerView.ViewHolder(view){
+    class ViewHolder(private val view: View, private val listener: RecyclerPersonClickHandler): RecyclerView.ViewHolder(view){
 
         private val characterGroup: ConstraintLayout = view.findViewById(R.id.itemRecycler_personsInformationGroup)
         private val characterName: TextView= view.findViewById(R.id.itemRecycler_name)
@@ -35,7 +31,7 @@ class persona(
             characterInformation.text= person.status
 
             characterGroup.setOnClickListener{
-                list3.onPersonClicked(person)
+                listener.onPersonClicked(person)
             }
         }
     }
@@ -47,7 +43,7 @@ class persona(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.setData(
+        holder.showInformation(
             list[position]
         )
     }
